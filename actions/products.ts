@@ -5,7 +5,7 @@ import WooCommerceRestApi from "woocommerce-rest-ts-api";
 
 // according to documentation best to call const api but I followed the video 
 const WooCommerce = new WooCommerceRestApi({
-  url: "http://72.60.134.219",
+  url: "http://benist85-yeezy.local/",
   consumerKey: process.env.WC_CONSUMER_KEY as string,
   consumerSecret: process.env.WC_CONSUMER_SECRET as string,
   version: "wc/v3",
