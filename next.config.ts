@@ -8,8 +8,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true, 
   },
   images: {
-    unoptimized: true, 
-    domains: ['http://72.60.134.219'],
+    unoptimized: false, 
+    domains: ['72.60.134.219'],
   },
   experimental: {
     webpackBuildWorker: true, 
