@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: true, 
+    domains: ['http://72.60.134.219'],
   },
   experimental: {
     webpackBuildWorker: true, 
