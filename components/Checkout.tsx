@@ -36,6 +36,7 @@ const Checkout = (props: Props) => {
         throw new Error(error.message)
       }
     } catch (error) {
+      console.log('Error!!!')
       console.error('Error: ', error)
     }
   }
