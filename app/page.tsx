@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getProducts } from "@/actions/products";
 import ProductGrid from "@/components/ProductGrid";
 

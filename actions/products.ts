@@ -5,7 +5,7 @@ import WooCommerceRestApi from "woocommerce-rest-ts-api";
 
 // according to documentation best to call const api but I followed the video 
 const WooCommerce = new WooCommerceRestApi({
-  url: "http://benist85-yeezy.local",
+  url: "http://72.60.134.219",
   consumerKey: process.env.WC_CONSUMER_KEY as string,
   consumerSecret: process.env.WC_CONSUMER_SECRET as string,
   version: "wc/v3",
@@ -13,10 +13,7 @@ const WooCommerce = new WooCommerceRestApi({
 
 export async function getProducts() {
   try {
-    const response = await WooCommerce.get("products?status=publish");
-    response.data.forEach(element => {
-      console.log(element.name); 
-    });
+    const response = await WooCommerce.get("products?per_page=20");
     return response.data;
   } catch (error) {
     console.error("Error fetching products:", error);
